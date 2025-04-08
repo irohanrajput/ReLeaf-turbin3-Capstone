@@ -76,7 +76,7 @@ Today’s climate initiatives often lack transparency, coordination, and verifia
 ## Local Setup
 
 ```bash
-git clone https://github.com/yourhandle/releaf.git
+git clone https://github.com/irohanrajput/releaf-turbin3-capstone.git
 cd releaf
 
 # Frontend
