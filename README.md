@@ -1,68 +1,79 @@
-# 🌿 ReLeaf – Verifiable Climate Action & Funding DAO
+# ReLeaf – Verifiable Climate Action & Funding DAO
 
-**ReLeaf** is a decentralized protocol on **Solana** that empowers individuals and communities to take meaningful climate action, verify their impact, and access funding through a DAO that supports grassroots environmental projects.
-
----
-
-## 🌍 Why ReLeaf?
-
-🌱 Climate impact should be **verifiable**, **transparent**, and **rewarding**.  
-🛠️ ReLeaf turns **eco-actions** into on-chain **reputation** and unlocks **community-driven funding** for local nature projects.
+**ReLeaf** is a decentralized protocol on the Solana blockchain that enables individuals and communities to log verifiable environmental actions, earn on-chain reputation, and access funding through a decentralized autonomous organization (DAO) that supports grassroots ecological projects.
 
 ---
 
-## 🔎 Core Features
+## Why ReLeaf?
 
-- ✅ **Proof of Action**: Submit evidence (photos, GPS, metadata) to record cleanups, plantings, and eco-work on-chain
-- 🪪 **Soulbound GreenNFTs**: Earn non-transferable reputation NFTs for verified actions
-- 🗳️ **ReLeaf DAO**: Propose and vote on grassroots projects needing funding
-- 💸 **Milestone-based Disbursal**: Funds released in stages as projects prove real-world progress
+Today’s climate initiatives often lack transparency, coordination, and verifiability. ReLeaf provides a solution by turning real-world environmental efforts into on-chain credentials, enabling communities to propose, fund, and track eco-projects in a decentralized, auditable manner.
 
 ---
 
-## 🧭 Use Cases
+## Key Features
 
-- **Activists** log verified eco-efforts and build on-chain credibility
-- **Communities** propose and get funding for rewilding, cleanups, tree planting
-- **DAO members** vote using on-chain eco-reputation
-- **Funders** can support verified local impact with full transparency
-
----
-
-## ⚙️ Tech Stack
-
-| Layer | Tech |
-|-------|------|
-| Blockchain | Solana |
-| Smart Contracts | Rust + Anchor |
-| NFT Layer | Metaplex + Soulbound Logic |
-| Frontend | React + TypeScript + TailwindCSS |
-| Wallets | Solana Wallet Adapter (Phantom, Backpack) |
-| Storage | IPFS / Arweave for proof data |
-| Governance | PDA-based voting, milestones, and vesting |
-| Oracles (Optional) | Chainlink Functions for media/GPS validation |
+- **Proof of Action:** Submit geo-tagged, timestamped evidence (photos, metadata) for eco-actions like tree planting, cleanups, or restoration work.
+- **Soulbound GreenNFTs:** Non-transferable reputation NFTs are issued upon successful verification of climate action.
+- **DAO Governance:** Token or NFT-based voting enables community-driven approval and funding of environmental projects.
+- **Milestone-based Disbursal:** Project funds are released in phases tied to progress updates and verified deliverables.
 
 ---
 
-## 🧠 Architecture
+## Use Cases
 
-- **GreenNFT Program**: Mints soulbound NFTs after eco-proof is submitted
-- **Reputation PDA**: Tracks users’ eco-contributions and voting weight
-- **Proposal PDA**: Stores proposals, milestones, and DAO votes
-- **Vault Program**: Disburses funds based on verified milestone completion
-
----
-
-## 🧪 Testing Strategy
-
-- Anchor unit tests for each program module
-- Integration testing of full flow: proof → NFT → proposal → disbursal
-- Mock oracle testing for proof validation
-- Security and vesting checks on treasury program
+- **Activists** build on-chain climate credentials through verified contributions.
+- **Communities** access funding for local, regenerative initiatives.
+- **Funders** support transparent, milestone-tracked climate efforts.
+- **DAOs** allocate treasury assets towards measurable impact.
 
 ---
 
-## 🧑‍💻 Developer Setup (Coming Soon)
+## Technology Stack
+
+| Layer           | Technologies                          |
+|------------------|----------------------------------------|
+| Blockchain        | Solana                               |
+| Smart Contracts   | Rust, Anchor Framework               |
+| NFT Layer         | Metaplex, Soulbound NFT Logic        |
+| Frontend          | React, TypeScript, Tailwind CSS      |
+| Wallet Support    | Solana Wallet Adapter (Phantom, Backpack) |
+| Data Storage      | IPFS / Arweave                       |
+| Governance        | PDA-based voting, vesting schedules  |
+| Oracles (Optional)| Chainlink Functions (proof validation) |
+
+---
+
+## Architecture Overview
+
+- **GreenNFT Program:** Issues soulbound NFTs after eco-proof is validated.
+- **Reputation PDA:** Tracks user participation and contribution levels.
+- **Proposal PDA:** Stores project proposals, milestones, and governance data.
+- **Vault Program:** Handles treasury disbursal based on verified milestone completions.
+
+---
+
+## Testing Strategy
+
+- Unit tests using Anchor for all smart contract modules
+- Integration tests across the full flow (submission → NFT minting → proposal → disbursal)
+- Mock oracle testing for media/GPS verification
+- Security and governance checks on treasury management logic
+
+---
+## Project Timeline
+
+| Week | Deliverable / Milestone                                      |
+|------|--------------------------------------------------------------|
+| 1    | Project setup, initial repo structure, system architecture design |
+| 2    | GreenNFT smart contract development and proof submission interface |
+| 3    | DAO governance logic (Proposal PDA, voting logic)            |
+| 4    | Vault contract for milestone-based fund disbursal            |
+| 5    | Frontend integration with wallet, GreenNFT, and DAO modules  |
+| 6    | Oracle setup for proof validation (media, GPS), optional     |
+| 7    | Full-stack integration tests, unit tests, QA, documentation  |
+| 8    | Final deployment, DAO walkthrough, and capstone presentation |
+
+## Local Setup
 
 ```bash
 git clone https://github.com/yourhandle/releaf.git
@@ -70,10 +81,14 @@ cd releaf
 
 # Frontend
 cd frontend
-pnpm install
-pnpm dev
+yarn install
+yarn dev
 
-# Programs
+# Solana Programs
 cd ../programs
 anchor build
 anchor test
+
+
+
+
